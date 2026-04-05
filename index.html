@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log Analyzer Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>🔐 Log Analyzer Dashboard</h1>
+</header>
+
+<section class="upload">
+    <input type="file" id="fileInput">
+    <button onclick="loadLogs()">Upload Logs</button>
+</section>
+
+<section class="stats">
+    <div class="card">Total Logs: <span id="totalLogs">0</span></div>
+    <div class="card">Failed Logins: <span id="failed">0</span></div>
+    <div class="card">Alerts: <span id="alerts">0</span></div>
+</section>
+
+<section class="filter">
+    <input type="text" id="searchIP" placeholder="Search by IP">
+    <button onclick="filterLogs()">Search</button>
+</section>
+
+<table>
+    <thead>
+        <tr>
+            <th>Timestamp</th>
+            <th>IP Address</th>
+            <th>Status</th>
+            <th>Message</th>
+        </tr>
+    </thead>
+    <tbody id="logTable"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
