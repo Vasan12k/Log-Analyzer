@@ -32,6 +32,10 @@ To automate the process of analyzing system logs and identifying potential secur
 
 ## 🛠️ Tech Stack
 - Python
+- flask
+- css
+- html
+- 
 
 ---
 
