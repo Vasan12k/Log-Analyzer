@@ -36,7 +36,7 @@ To automate the process of analyzing system logs and identifying potential secur
 - css
 - html
 - 
-
+by srinivasan.k
 ---
 
 ## 📁 Project Structure
